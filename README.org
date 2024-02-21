@@ -1,0 +1,33 @@
+* Emacs Redox Keymap
+An Emacs-optimized Redox keyboard layout.
+
+** Requirements
+*** Follow the QMK tutorial [[https://docs.qmk.fm/#/newbs][here]]
+
+** Installation
+*** Clone this repo into your QMK firmware Redox keymap folder
+#+begin_src shell
+git clone https://github.com/manzaltu/emacs-redox-keymap <QMK path>/keyboards/redox/keymaps/emacs-redox-keymap
+#+end_src
+*** Compile firmware
+#+begin_src shell
+qmk compile -kb redox/rev1 -km emacs-redox-keymap
+#+end_src
+*** Flash firmware to both sides of keyboard
+#+begin_src shell
+qmk flash -kb redox/rev1 -km emacs-redox-keymap
+#+end_src
+
+** LICENSE
+Copyright © 2024 Yoav Orot.
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU
+General Public License as published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without
+even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program. If not,
+see <https://www.gnu.org/licenses/>.
